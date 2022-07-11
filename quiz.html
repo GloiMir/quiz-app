@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./quiz.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <div class="home" id="home">    
+            <div>
+                <p>JavaScript Quiz</p>
+            </div>
+            <div>
+                <p>
+                    Evaluez vos competences en JavaScriipt en
+                    répondant aux questions que nous avons
+                    spécialement sélectionnées pour vous.
+                    C'est fun et c'est gratuit
+                </p>
+            </div>
+            <section>
+               <label for="nom">Nom</label>
+               <input type="text" class="nom" placeholder="Votre nom">
+               <span id="erreurNom"></span>
+            </section>
+            <section>
+                <label>Email</label>
+               <input type="text" placeholder="Votre adresse mail">
+               <span id="erreurMail"></span>
+            </section>
+            <section>
+                <button id="commencer">Commencer</button>
+            </section>   
+        </div>
+
+        <div class="game" id="game">   
+            <div><p id="question">Qui est le fondateur de javascript</p></div> 
+            <div class="div2">                
+                <div>
+                    <span id="num">1/15</span>
+                    <span id="time">60</span>
+                </div>
+                <div id="barre"></div>
+            </div>
+                                            
+            <div name>
+                <input type="radio" id="ass1" name="assertion">
+                <label for="ass1" id="lab1">Steeve JOBS</label><br>
+            </div>
+
+            <div name>
+                <input type="radio" id="ass2" name="assertion">
+                <label for="ass2" id="lab2">Bill GATES</label><br>
+            </div>
+
+            <div name>
+                <input type="radio" id="ass3" name="assertion">
+                <label for="ass3" id="lab3">Michael DELL</label><br>
+            </div>
+
+            <div name>
+                <input type="radio" id="ass4" name="assertion">
+                <label for="ass4" id="lab4">Brendan EICH</label><br>   
+            </div>
+
+            <div>
+                <button id="quitter">Quitter</button>
+                <button id="suivant">Suivant</button>   
+            </div>            
+        </div>
+
+        <div class="result" id="result">
+            <div>
+                <p id="nom_joueur"></p>
+            </div>
+            <div>
+                <p id="mail_joueur"></p>
+            </div>
+            <div id="im1">
+                <img src="./img/check_circle_FILL0_wght400_GRAD0_opsz48.svg" width="80px" height="80px" alt="">
+            </div>
+            <div id="im2">
+                <img src="./img/cancel_FILL0_wght400_GRAD0_opsz48.svg" width="80px" height="80px" alt="">
+            </div>
+            <div>
+                <p id="point"></p>
+            </div>
+            <div>
+                <button id="retour">Acceuil</button>
+            </div>
+            
+        </div>
+    </body>
+    <script src="./quiz.js"></script>
+</html>
